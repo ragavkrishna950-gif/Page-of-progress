@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragav Krishna | Personal Website</title>
+  <meta name="description" content="Personal portfolio website of Ragav Krishna, a CSE student and creative anime enthusiast.">
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121a30; --text:#eef2ff; --muted:#aab4d0;
+      --accent:#7c5cff; --accent2:#20d9c5; --line:#263252;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:
+      radial-gradient(circle at 15% 10%,#251b59 0,transparent 30%),
+      radial-gradient(circle at 85% 15%,#073e49 0,transparent 28%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1100px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:800;font-size:1.15rem}.logo span{color:var(--accent2)}
+    .links{display:flex;gap:20px;font-size:.92rem;color:var(--muted)}
+    .links a:hover{color:white}
+    .hero{min-height:88vh;display:grid;place-items:center;padding:70px 22px}
+    .hero-inner{max-width:1100px;width:100%;display:grid;grid-template-columns:1.4fr .8fr;gap:45px;align-items:center}
+    .badge{display:inline-block;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--accent2);background:#11192d}
+    h1{font-size:clamp(2.7rem,7vw,5.5rem);line-height:.98;margin:20px 0}
+    h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}
+    .lead{font-size:1.15rem;color:var(--muted);max-width:650px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700}
+    .primary{background:linear-gradient(90deg,var(--accent),#5d8cff);border:0}
+    .avatar{width:280px;height:280px;margin:auto;border-radius:50%;display:grid;place-items:center;
+      background:linear-gradient(145deg,#171e3b,#10162a);border:1px solid #35416a;
+      box-shadow:0 0 80px rgba(124,92,255,.25);font-size:6rem}
+    section{max-width:1100px;margin:auto;padding:90px 22px}
+    .section-title{font-size:2rem;margin:0 0 8px}.section-sub{color:var(--muted);margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .card{background:rgba(18,26,48,.78);border:1px solid var(--line);border-radius:18px;padding:24px}
+    .card h3{margin-top:0}.card p{color:var(--muted)}
+    .tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:7px 10px;border-radius:999px;background:#1a2442;color:#dce3ff;font-size:.85rem}
+    .timeline{border-left:2px solid var(--line);padding-left:22px}.item{margin:0 0 28px}.item h3{margin-bottom:2px}.item small{color:var(--accent2)}
+    footer{border-top:1px solid var(--line);text-align:center;padding:30px 22px;color:var(--muted)}
+    @media(max-width:760px){.links{display:none}.hero-inner{grid-template-columns:1fr;text-align:center}.lead{margin:auto}.buttons{justify-content:center}.avatar{width:210px;height:210px;font-size:4.5rem}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav">
+    <a class="logo" href="#home">Ragav<span>.</span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#interests">Interests</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="badge">CSE Student • Creative Learner</div>
+      <h1>Hi, I'm <span>Ragav Krishna</span>.</h1>
+      <p class="lead">Welcome to my personal space on the web. I'm a Computer Science student who enjoys technology, creative design, anime, and exploring new ideas.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#about">Explore My Website</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="avatar" aria-label="Profile placeholder">RK</div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-sub">A little introduction.</p>
+  <div class="card">
+    <p>I'm Ragav Krishna, a Computer Science and Engineering student. I like learning technology while also spending time on creative projects involving anime, television, graphics, and video content.</p>
+    <p>This website is my personal portfolio and can grow along with my college journey. I'll use it to showcase what I learn, build, and create.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills & Learning</h2>
+  <p class="section-sub">Things I'm learning or interested in developing.</p>
+  <div class="grid">
+    <div class="card"><h3>💻 Computer Science</h3><p>Building a foundation in programming, problem solving, web development, and software concepts.</p></div>
+    <div class="card"><h3>🎨 Creative Design</h3><p>Creating promotional graphics, schedules, posters, and visual content for digital platforms.</p></div>
+    <div class="card"><h3>🎬 Video & Media</h3><p>Interested in editing, presentation, television-style promotions, and digital media creation.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">A growing collection of things I've worked on.</p>
+  <div class="grid">
+    <div class="card"><h3>Anime Promo Designs</h3><p>Broadcast-style promotional graphics and anime schedule designs for digital content.</p><div class="tags"><span class="tag">Design</span><span class="tag">Anime</span><span class="tag">Promotion</span></div></div>
+    <div class="card"><h3>YouTube Content</h3><p>Creating and organizing TV/anime-related visual content for a YouTube channel.</p><div class="tags"><span class="tag">YouTube</span><span class="tag">Editing</span><span class="tag">Media</span></div></div>
+    <div class="card"><h3>My Web Portfolio</h3><p>This website itself is a project that can evolve as I learn HTML, CSS, JavaScript, and more.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Web</span></div></div>
+  </div>
+</section>
+
+<section id="interests">
+  <h2 class="section-title">Interests</h2>
+  <p class="section-sub">What I enjoy exploring.</p>
+  <div class="card">
+    <div class="tags">
+      <span class="tag">Anime</span><span class="tag">Technology</span><span class="tag">Mathematics</span>
+      <span class="tag">Graphic Design</span><span class="tag">YouTube</span><span class="tag">Television</span>
+      <span class="tag">Programming</span><span class="tag">Creative Media</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-sub">Want to connect? Add your public contact details here.</p>
+  <div class="card">
+    <p><strong>Email:</strong> Add your email address</p>
+    <p><strong>YouTube:</strong> Add your channel link</p>
+    <p><strong>Social:</strong> Add the profiles you want to share publicly</p>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Ragav Krishna • Built with HTML & CSS</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
